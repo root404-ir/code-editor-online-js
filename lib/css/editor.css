@@ -1,0 +1,111 @@
+:root {
+    --editor-bg: #eee;
+    --editor-border: #3f87a6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+}
+
+.editor {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.editor h3
+{
+    margin-bottom: 20px;
+    color: #fff;
+}
+.editor__wrapper {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--editor-bg);
+    padding: 1em;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.editor__body {
+    flex: 1;
+}
+
+.editor__footer {
+    display: flex;
+}
+
+.editor__footer--left {
+    display: flex;
+    flex-direction: column;
+}
+
+.editor__footer--right {
+    flex: 1;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+.editor__btn {
+    border: 0;
+    padding: .5em;
+    background-color: #fff;
+    border: 2px solid #333;
+    margin-top: 1em;
+    width: 100px;
+    cursor: pointer;
+}
+
+.editor__console {
+    background-color: #fff;
+    width: 100%;
+    height: 130px;
+    margin-top: 0.9em;
+    border: 1px solid var(--editor-border);
+    overflow: auto;
+    background-color: #000;
+    font-size: 14px;
+}
+
+.editor__code {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    inset: 0;
+    border: 1px solid var(--editor-border);
+}
+
+.editor__console--logs {
+    padding: 10px;
+    list-style: none;
+    color: chartreuse;
+}
+
+.editor__console--logs li pre {
+    font-size: .9em;
+}
+
+.ace_gutter {
+    border-left: 3px solid var(--editor-border);
+}
+
+.log--default {
+    color: #000;
+}
+
+.log--string {
+    color: #48bf0a;
+}

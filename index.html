@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>کد ادیتور آنلاین فرانت کد</title>
+    <link rel="stylesheet" href="lib/css/editor.css">
+</head>
+
+<body>
+    <div class="editor">
+        <h3>ادیتور آنلاین جاوااسکریپت فرانت کد</h3>
+        <div class="editor__wrapper">
+            <div class="editor__body">
+                <div id="editorCode" class="editor__code"></div>
+            </div>
+            <div class="editor__footer">
+                <div class="editor__footer--left">
+                    <button class="editor__btn editor__run">Run ></button>
+                    <button class="editor__btn editor__reset">Reset ></button>
+                    <button class="editor__btn editor__save">save code</button>
+                </div>
+                <div class="editor__footer--right">
+                    <div class="editor__console">
+                        <ul class="editor__console--logs"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="lib/js/ace-editor/src-min/ace.js"></script>
+    <script src="lib/js/ace-editor/src-min/mode-javascript.js"></script>
+    <script src="lib/js/ace-editor/src-min/ext-language_tools.js"></script>
+
+    <script src="lib/js/editor.js"></script>
+    <script src="lib/js/editor.console.js"></script>
+</body>
+
+</html>
